@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
@@ -19,21 +20,43 @@
     <title>M&S Tecnología Digital</title>
 </head>
 
-<body class="body">
+<body>
     <header>
-        <div class="header">
-            <div class="logo">
-                <img src="img/LOGO.png" width="80" height="80" alt="LOGO">
+        <nav class="navbar navbar-expand-sm navbar-light bg-primary">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- logo -->
+            <a class="navbar-brand" href="index.html">
+              <img src="img/LOGO.png" width="40" height="40" alt="">
+            </a>
+            
+            <!-- enlaces -->
+            <div class="collapse navbar-collapse" id="opciones">   
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link ccc" href="fotocopiadoras.html">Fotocopiadoras</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="impresoras.html">Impresoras</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#">Scanner</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Alquiler</a>
+                </li>            
+                <li><hr class="dropdown-divider"></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contacto</a>
+                </li>            
+
+             
+              </ul>
             </div>
-            <div class="links">
-                <a class="links_banner" href="">Inicio</a>
-                <a class="links_banner" href="">Alquiler</a>
-                <a class="links_banner" href="">Fotocopiadoras</a>
-                <a class="links_banner" href="">Impresoras</a>
-                <a class="links_banner" href="">Soporte</a>
-                <a class="links_banner" href="">Contacto</a>
-            </div>
-        </div>
+          </nav>
+        
     </header>
     <div class="banner">
         <img class="bannerPrincipal" src="img/RICOH.jpg" alt="">
@@ -44,14 +67,14 @@
 
     <main>
         <div class="bloque">
-            <div class="bloque_1">
+            <div class="bloque_1 border border-4">
                 <h2 class="titulo_1">Alquiler de Fotocopiadoras</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio quaerat placeat eum voluptas omnis
                     nobis
                     facere dolorem ab,
                     et, alias tenetur vitae quasi molestias deleniti quo nesciunt assumenda, nostrum perferendis!</p>
             </div>
-            <div class="bloque_2">
+            <div class="bloque_2 border border-4">
                 <h2 class="titulo_1">Alquiler de Impresoras</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique a dolorem nam excepturi? Quos
                     magnam,
@@ -59,7 +82,7 @@
                     aperiam fugit quibusdam esse quisquam cumque culpa a omnis voluptatibus atque at. Ab!</p>
             </div>
         </div>
-        <div class="png">
+        <div class="png sombra">
             <div class="png_1">
                 <svg class=xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
                     class="bi bi-tools" viewBox="0 0 16 16">
@@ -126,14 +149,14 @@
                 </div>
             </div>
 
-            <div class="cardPrincipal">
+            <div class="cardPrincipal sombra">
                 <div>
                     <h2 class="subtitulo_3">Area de Soporte Técnico</h2>
                     <p class="parrafo_3">Descarga de Drivers</p>
                 </div>
                 <div class="cardBox row justify-content-around">
                     <div class="card col-sm-6 col-xs-12">
-                        <img src="img/fotocopiadora.jpg"class="card-img-top" alt="fotocopiadora">
+                        <img src="img/fotocopiadora.jpg" class="card-img-top" alt="fotocopiadora">
                         <div class="card-body">
                             <h5 class="card-title">Fotocopiadoras </h5>
                             <p class="card-text">Descarga aca tu driver</p>
@@ -186,9 +209,12 @@
         </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
 </body>
 
 </html>
