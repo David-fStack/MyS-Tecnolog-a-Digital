@@ -1,0 +1,74 @@
+/* ROOT */
+:root{
+    --primario: rgb(14, 14, 202);
+    --secundario: red;
+    --blanco: white;
+    --black: black;
+    --gris: rgb(185, 196, 185);
+
+    --fontPrimario: 'Scheherazade New', serif;
+    --fontSecundario: 'Crimson Text', serif;
+    --fontSecundarioBold: 'Scheherazade New', serif;
+
+}
+
+/* TEXTO  */
+.body {
+    font-family: var(--fontSecundario);
+}
+
+h1 {
+    font-size: 15rem;
+}
+
+h2 {
+    font-size: 10rem;
+}
+
+h3 {
+    font-size: 5rem;
+}
+
+.header {
+   background-color: var(--primario);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+}
+
+.logo {
+    margin-top: 1rem;
+}
+
+.links {
+    font-family: var(--fontSecundarioBold);
+    font-size: 2rem;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.links_banner {
+    color:var(--blanco);
+    text-decoration: none;
+}
+
+.links_banner:hover {
+    color: var(--secundario);
+    
+}
+
+.subtitulo {
+    font-family: ;
+}
+
+.banner2 {
+    background-color: var(--black);
+}
+
+
