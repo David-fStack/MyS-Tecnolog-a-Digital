@@ -41,10 +41,11 @@ h3 {
 
 /* BANNER PRINCIPAL */
 .letra1 {
-    font-size: 4rem;
+    font-size: 200%;
+    color: black;
 }
  .letra2 {
-     font-size: 3rem;
+     font-size: 150%;
  }
 
 /* NAVEGADOR */
