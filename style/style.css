@@ -40,9 +40,12 @@ h3 {
 
 
 /* BANNER PRINCIPAL */
-.bannerPrincipal {
-    width: 100%;
+.letra1 {
+    font-size: 4rem;
 }
+ .letra2 {
+     font-size: 3rem;
+ }
 
 /* NAVEGADOR */
 
@@ -105,6 +108,12 @@ h3 {
     -moz-box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.63);
     box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.63);
 }
+/* LOGO pRINCIPAL */
+.logoPrincipal {
+    display: flex;
+    justify-content: center;
+}
+
 
 /* MARCAS */
 .subtitulo_2 {
@@ -147,6 +156,12 @@ h3 {
 @media(min-width: 768px) {
     .imgBanner {
         padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .imgBanner_1, .imgBanner_2, .imgBanner_3, .imgBanner_4, .imgBanner_5 {
+        width: 14vw;
     }
 }
 
