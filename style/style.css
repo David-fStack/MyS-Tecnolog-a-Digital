@@ -235,6 +235,9 @@ h3 {
 
 }
 
+.y {
+    color: red;
+}
 .imgFooter {
     margin-top: .5rem;
     margin-bottom: .5rem;
@@ -249,4 +252,13 @@ h3 {
 .iconoFooter {
     margin-top: .5rem;
     margin-bottom: .5rem;
+}
+
+.copyRigth {
+    text-transform: uppercase;
+    background-color: var(--black);
+    color: white;
+    text-align: center;
+
+    align-items: center;    
 }
