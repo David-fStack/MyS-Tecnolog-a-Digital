@@ -42,10 +42,15 @@ h3 {
 /* BANNER PRINCIPAL */
 .letra1 {
     font-size: 200%;
+    color: var(--primario);
+}
+
+.letra-1 {
     color: black;
 }
  .letra2 {
      font-size: 150%;
+     
  }
 
 /* NAVBAR PRINCIPAL*/
