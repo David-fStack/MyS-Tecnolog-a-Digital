@@ -269,7 +269,7 @@ h3 {
 
 .parallax {
     /* The image used */
-    background-image: url("../img/banner5.jpg");
+    background-image: url("../img/nuevo.jpeg");
   
     /* Set a specific height */
     min-height: 500px; 
@@ -280,6 +280,16 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  @media(min-width: 768px) {
+      .parallax {
+          background-image: url(../img/nueno1.jpeg);
+      }
+  @media(min-width: 1200px) {
+      .parallax {
+          background-image: url(../img/banner5.jpg);
+      }
+    }
+}
 
 .footerFull {
     background-color: rgb(70, 102, 139);
@@ -311,11 +321,37 @@ h3 {
      color: var(--blanco);
 }
 
-.textoMapa {
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    color: var(--blanco);
+
+
+@media(min-width: 768px) {
+    .logoFooter {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        text-align: center;
+    }
+    .footerFull {
+        display: grid;
+        grid-template-columns: repeat(3, 3fr);
+    }
+    .textoFooter {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+        text-align: left;
+    }
+    .mapaFooter {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        text-align: center;
+        margin: 2rem;
+    }
+    .iconsFooter {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+        text-align: center;
+    }
+   
 }
+
 /* COPY-RIGTH */
 .copyRigth {
     text-transform: uppercase;
