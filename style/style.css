@@ -304,7 +304,7 @@ h3 {
 
 .textoFooter {
     font-family: var(--secundario);
-    font-size: 1rem;
+
     color: var(--blanco);
     text-align: center;
     margin-top: 1rem;
@@ -326,7 +326,7 @@ h3 {
 @media(min-width: 768px) {
     .logoFooter {
         grid-column: 1 / 2;
-        grid-row: 1 / 2;
+        grid-row: 2 / 3;
         text-align: center;
     }
     .footerFull {
@@ -335,19 +335,20 @@ h3 {
     }
     .textoFooter {
         grid-column: 3 / 4;
-        grid-row: 1 / 2;
+        grid-row: 2 / 3;
         text-align: left;
     }
     .mapaFooter {
-        grid-column: 2 / 3;
+        grid-column: 1 / 4;
         grid-row: 1 / 2;
         text-align: center;
         margin: 2rem;
+       
     }
     .iconsFooter {
-        grid-column: 3 / 4;
+        grid-column: 2 / 3;
         grid-row: 2 / 3;
-        text-align: center;
+        text-align:
     }
    
 }
