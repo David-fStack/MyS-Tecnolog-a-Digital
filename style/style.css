@@ -80,6 +80,15 @@ h3 {
     margin-right: 5%;
 }
 
+.imgLogo {
+  height: 250px;
+  background-image: url("../img/logo M&S FINAL png.png");
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30vh;
+}
+
 .servicio {
   background-color: #0D6EFD;
   padding-bottom: 1px;
