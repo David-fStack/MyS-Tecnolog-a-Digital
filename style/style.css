@@ -77,16 +77,16 @@ h3 {
 
 /* NAVBAR PRINCIPAL*/
 .imgLogo2 {
-    margin-right: 5%;
+  margin-right: 5%;
 }
 
 .imgLogo {
-  height: 250px;
+  height: 280px;
   background-image: url("../img/logo M&S FINAL png.png");
   background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 30vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30vh;
 }
 
 .servicio {
