@@ -81,7 +81,7 @@ h3 {
 }
 
 .imgLogo {
-  height: 280px;
+  height: 350px;
   background-image: url("../img/logo M&S FINAL png.png");
   background-attachment: fixed;
   background-position: center;
@@ -110,6 +110,8 @@ h3 {
     text-align: center;
     margin-top: 1rem;
 }
+
+
 
 .logoConFondo {
   padding-top: 10px;
@@ -508,3 +510,40 @@ h3 {
 
 }
 
+/* FORMULARIO */
+.subtituloFormulario {
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: ;
+}
+
+.contactoFormulario {
+  font-size: 3rem;
+  color: #00aced;
+}
+.formulario {
+  box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.46);
+  -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.46);
+  height: auto;
+  font-size: 1rem;
+  padding: 10px;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.boton {
+  text-transform: uppercase;
+  background-color: var(--colorPrimario);
+  color: blanchedalmond;
+  border-radius: 4px;
+  border-color: var(--colorPrimario);
+  margin-left: 45%;
+  margin-bottom: 1rem;
+}
+
+.boton {
+  background-color: #00aced;
+}
+.boton:hover {
+  background-color: rgb(9, 224, 231);
+}
