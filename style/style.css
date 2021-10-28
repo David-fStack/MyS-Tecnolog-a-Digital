@@ -140,13 +140,7 @@ h3 {
 
 }
 
-@media(min-width: 356px) {
-    .iconsMedio {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
 
-    }
-}
 
 /* IMAGENES - PNG */
 
@@ -252,18 +246,6 @@ h3 {
     margin-left: 1rem;
 }
 
-@media(min-width: 768px) {
-    .imgBanner {
-        padding: 1rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .imgBanner_1, .imgBanner_2, .imgBanner_3, .imgBanner_4, .imgBanner_5 {
-        width: 14vw;
-    }
-}
-
 
 /* CARD PRINCIPAL */
 
@@ -318,17 +300,7 @@ h3 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-  @media(min-width: 768px) {
-      .parallax {
-          background-image: url(../img/nueno1.jpeg);
-      }
-  @media(min-width: 1200px) {
-      .parallax {
-          background-image: url(../img/banner5.jpg);
-      }
-    }
-}
+  }     
 
 
 /* FOOTER */
@@ -407,24 +379,6 @@ h3 {
 {
   margin:0
 }
-@media (max-width:991px)
-{
-  .site-footer [class^=col-]
-  {
-    margin-bottom:30px
-  }
-}
-@media (max-width:767px)
-{
-  .site-footer
-  {
-    padding-bottom:0
-  }
-  .site-footer .copyright-text,.site-footer .social-icons
-  {
-    text-align:center
-  }
-}
 .social-icons
 {
   padding-left:0;
@@ -487,15 +441,6 @@ h3 {
 {
   background-color:#ea4c89
 }
-@media (max-width:767px)
-{
-  .social-icons li.title
-  {
-    display:block;
-    margin-right:0;
-    font-weight:600
-  }
-}
 
 /* FIN FOOTER */
 
@@ -507,4 +452,68 @@ h3 {
     text-align: center;
 
 }
+
+
+/* MEDIA QUERY */
+@media(min-width: 360px) {
+  .iconsMedio {
+      display: grid;
+      grid-template-columns: repeat(2, 3fr);
+
+  }
+  .png_5 {
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;
+  }
+
+}
+
+@media (min-width:768px){
+  .iconsMedio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+  .imgBanner {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+  .imgBanner_1, .imgBanner_2, .imgBanner_3, .imgBanner_4, .imgBanner_5 {
+    width: 14vw;
+}
+  .parallax {
+    background-image: url(../img/nueno1.jpeg);
+}
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+
+@media (max-width:991px){
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+
+@media(min-width: 1200px) {
+  .parallax {
+      background-image: url(../img/banner5.jpg);
+  }
+}
+
 
