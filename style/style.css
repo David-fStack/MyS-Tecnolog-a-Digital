@@ -70,8 +70,9 @@ h3 {
 .letra-1 {
     color: black;
 }
- .letra2 {
+ .letra2_3 {
      font-size: 150%;
+     color: red;
      
  }
 
@@ -451,6 +452,12 @@ h3 {
     color: white;
     text-align: center;
 
+}
+
+/* Formulario E-mail */
+
+.contactoFormulario, .parrafo{
+  text-align: center;
 }
 
 
