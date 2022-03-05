@@ -340,10 +340,16 @@ h3 {
   color:#3366cc;
   text-decoration:none;
 }
+
+.footer_links {
+  text-decoration: none;
+}
+
 .footer-links
 {
   padding-left:0;
-  list-style:none
+  list-style:none;
+  text-decoration: none;
 }
 .footer-links li
 {
