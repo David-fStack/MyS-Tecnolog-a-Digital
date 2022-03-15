@@ -14,7 +14,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <!-- materialize -->
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
@@ -129,6 +128,7 @@
     <!-- FORMULARIO -->
     <form class="formulario container needs-validation" target="_blank" method="POST" action="http://localhost/form"
         novalidate>
+        
         <div class="box-shadow ps-2">
 
             <div class="form-group mb-2">
@@ -141,9 +141,11 @@
                 <label for="celular">Celular:</label>
                 <input required type="number" name="celular" class="form-control" id="celular"
                     placeholder="Escriba su celular">
+
                 <div class="invalid-feedback">
                     Este campo no puede estar vacio.
                 </div>
+
                 <div id="emailHelp" class="form-text">Codigo de area + Número</div>
             </div>
 
@@ -151,6 +153,7 @@
                 <label for="email">Email:</label>
                 <input required type="email" id="email" name="email" class="form-control"
                     placeholder="mail@e-mail.com">
+
                 <div class="invalid-feedback">
                     Este campo no puede estar vacio o debe tener el formato de mail.
                 </div>
@@ -170,7 +173,7 @@
 
             <div class="form-group mb-2">
                 <label for="equipo">Marca de Equipo</label>
-                <select required class="form-select" id="equipo" name="equipo">
+                <select required class="form-select" id="modelo" name="equipo">
                     <option selected value="">Seleccione</option>
                     <option value="equipo">Samsung</option>
                     <option value="equipo">Ricoh</option>
@@ -183,36 +186,32 @@
             </div>
 
             <div class="form-group mb-2">
-                <label for="servicio">Equipo</label>
-                <select required class="form-select" id="servicio" name="servicio">
+                <label for="modelo">Modelo:</label>
+                <input required type="text" class="form-control" id="modelo" name="modelo"
+                    placeholder="Escriba aqui el modelo de su Equipo">
+            </div>
+
+            <div class="form-group mb-2">
+                <label for="insumo">Servicio</label>
+                <select required class="form-control" id="oficina" name="oficina">
                     <option selected value="">Seleccione</option>
-                    <option value="Multifunción">Brother DCP-5650</option>
-                    <option value="Multifunción">Ricoh MP301</option>
-                    <option value="Multifunción">Ricoh MP</option>
+                    <option value="toner">Consulta</option>
+                    <option value="toner">Sericio Tecnico</option>
+                    <option value="toner">Tonner</option>
+                    <option value="toner">Modulo de Imagen</option>
+                    <option value="toner">Traba de Pepel</option>
                 </select>
             </div>
 
+            <div class="mb-3">
+                <label for="texto">Escribe aqui:</label>
+                <textarea class="form-control" name="texto" id="texto" rows="10"
+                        placeholder="Escribe aqui, para saber en que te podemos ayudar"></textarea>
+            </div>
 
-    <div class="form-group mb-2">
-        <label for="oficina">Servicio</label>
-        <select required class="form-control" id="oficina" name="oficina">
-            <option selected value="">Seleccione</option>
-            <option value="toner">Sericio Tecnico</option>
-            <option value="toner">Tonner</option>
-            <option value="toner">Modulo de Imagen</option>
-            <option value="toner">Traba de Pepel</option>
-            <option value="toner">Consulta</option>
-            
-    </div>
-
-        <div class="mb-2">
-            <label for="texto">Escribe aqui:</label>
-            <textarea class="form-control" name="texto" id="texto" rows="10"
-                placeholder="Escribe aqui, para saber en que te podemos ayudar"></textarea>
-        </div>
-
-        <button type="button" class="btn btn-primary">Enviar</button>
-        </div>
+            <div>
+                <button type="button" class="btn btn-primary">Enviar</button>
+            </div>
     </form>
 
     <br>
